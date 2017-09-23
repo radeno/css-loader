@@ -343,7 +343,7 @@ To import from multiple modules use multiple `composes:` rules.
 
 By default the css-loader minimizes the css if specified by the module system.
 
-In some cases the minification is destructive to the css, so you can provide your own options to the cssnano-based minifier if needed. See [cssnano's documentation](http://cssnano.co/guides/) for more information on the available options.
+In some cases the minification is destructive to the css, so you can provide your own options to the clean-css minifier if needed. See [clean-css's documentation](https://github.com/jakubpawlowicz/clean-css) for more information on the available options.
 
 You can also disable or enforce minification with the `minimize` query parameter.
 
@@ -352,7 +352,7 @@ You can also disable or enforce minification with the `minimize` query parameter
 {
   loader: 'css-loader',
   options: {
-    minimize: true || {/* CSSNano Options */}
+    minimize: true || {/* clean-css options */}
   }
 }
 ```
